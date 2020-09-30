@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/LStyle.css">
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="atas">
+        <img  src="img/logo.png" alt="loading......"  class="pic">
+        
+    </div>
+    <div class="container">
+
+        <div class="navigation">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Login.html">Login</a>
+                <a href="Feed.html">Feedback</a>
+                <a href="Ratt.html">Rating</a>
+                <a href="Forum.html">Forum</a>
+            </nav>
+        </div>
+        <div class="llabel">
+            <h1>Login</h1>
+        </div>
+
+        <div class="content">
+            <form action="" onsubmit="return cekForm()">
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td>:</td>
+                        <td><input type="text" name="uName" id="uName"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>:</td>
+                        <td><input type="password" name="pass" id="pass"></td>
+                    </tr>
+                </table>
+                <br>
+                <div id="lerror">
+
+                </div>
+                <br>
+                <div class="loginbtn">
+                    <div class="vertical-center">
+                        <button id="btn" type="submit" onclick="cekForm()">Login
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <br>
+            <div class="regis">
+                <a href="Regis.html">Belum punya akun?Klik di sini</a>
+            </div>
+        </div>
+        <div class="cpy">
+            &COPY; Dendy Tiawan Putra / 2201727765
+        
+            </div>
+</body>
+</html>

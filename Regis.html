@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="css/RStyle.css">
+    <script src="js/register.js"></script>
+</head>
+<body>
+    <div class="atas">
+        <img  src="img/logo.png" alt="loading......"  class="pic">
+        
+    </div>
+    <div class="container">
+
+        <div class="navigation">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Login.html">Login</a>
+                <a href="Feed.html">Feedback</a>
+                <a href="Ratt.html">Rating</a>
+                <a href="Forum.html">Forum</a>
+            </nav>
+        </div>
+        <div class="rlabel">
+            <h1>Registrasi</h1>
+        </div>
+        <div class="content">
+            <form action="" onsubmit="return cekForm()">
+                <table>
+                    
+                    <tr>
+                        <td>Full Name</td>
+                        <td>:</td>
+                        <td><input type="text" name="fName" id="fName"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="text" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>:</td>
+                        <td><input type="text" name="uName" id="uName"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>:</td>
+                        <td><input type="password" name="pass" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td>:</td>
+                        <td><input type="password" name="cPass" id="cPass"></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="date" id="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Aggreement</td>
+                        <td>:</td>
+                        <td>
+                        <input type="checkbox" id="checkbox" value="I Agree">
+                        <label for="checkbox">I accept the aggrement</label>
+                        </td>
+                        
+                    </tr>
+                </table>
+                
+            </form>
+            <br>
+            <div id="regiserror">
+
+            </div>
+            <br>
+            <div class="regisButton">
+                <div class="vertical-center">
+                    <button id="btn" type="submit" onclick="cekForm()">Confirm
+                    </button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="login">
+                <a href="Login.html">Sudah punya akun?Klik di sini</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cpy">
+    &COPY; Dendy Tiawan Putra / 2201727765
+
+    </div>
+</body>
+</html>

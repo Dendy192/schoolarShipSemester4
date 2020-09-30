@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/FStyle.css">
+    <script src="js/feed.js"></script>
+</head>
+<body>
+    <div class="atas">
+        <img  src="img/logo.png" alt="loading......"  class="pic">
+        
+    </div>
+    <div class="container">
+
+        <div class="navigation">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Login.html">Login</a>
+                <a href="Feed.html">Feedback</a>
+                <a href="Ratt.html">Rating</a>
+                <a href="Forum.html">Forum</a>
+            </nav>
+        </div>
+        <div class="flabel">
+        <h1>Feedback</h1>
+        </div>
+        <div class="content">
+            <form action="" onsubmit="return cekForm()">
+                <table>
+                    <tr>
+                        <td>FullName</td>
+                        <td>:</td>
+                        <td><input type="text" name="rName" id="rName" ></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="text" name="email" id="email" ></td>
+                    </tr>
+                    <tr>
+                        <td>Messange</td>
+                        <td>:</td>
+                        <td><textarea name="msg" id="mgs" cols="30" rows="10"></textarea></td>
+                    </tr>
+                </table>
+                <br>
+                <div id="lerror">
+
+                </div>
+                <br>
+                <div class="feedbtn">
+                    <div class="vertical-center">
+                        <button id="btn" type="submit" onclick="cekForm()">Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="cpy">
+        &COPY; Dendy Tiawan Putra / 2201727765
+    </div>   
+</body>
+</html>

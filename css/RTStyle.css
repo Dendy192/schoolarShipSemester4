@@ -1,0 +1,120 @@
+.atas{
+    text-align: center;
+}
+
+.pic{
+    float: center;
+    width:  15%; 
+    height: 15%;
+
+}
+.navigation{
+    
+    width: auto;
+    background-color: rgb(161, 93, 4);
+    text-align: center;
+    opacity: 80%;
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    opacity: 100%;
+}
+
+nav a:hover{
+    background-color: violet;
+    color: blueviolet;
+}
+
+nav a.active{
+    background-color: #4caf50;
+    color: white;
+}
+
+nav a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+body{
+    
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-image: url(../img/Corpus-Christi-College-University-of-Cambridge-England.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cpy{
+    background-color: orange;
+    text-align: center;
+    position: fixed;bottom:0;
+    width: 100%;
+}
+
+.content{
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    align-content: left;
+    grid: auto  / auto;
+    
+    
+    text-align: left;
+    margin: 100px;
+    margin-left: 500px;
+    margin-right: 450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.rat{
+    text-align: center;
+    font-size: 25px;
+}
+
+.star{
+    color: goldenrod;
+    font-size: 2.0rem;
+    padding: 0 ; 
+  }
+  .star::before{
+    content: '\2606';    
+    cursor: pointer;
+  }
+  .star.rated::before{
+    
+    content: '\2605';  
+  }
+  
+  .stars{
+      counter-reset: rateme 0;
+      text-align: center;   
+      font-size: 2.0rem;
+      font-weight: 900;
+  }
+
+.ratingbtn{
+    text-align: center;
+}
+.rtlabel{
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 30px;
+    margin: 100px;
+}
+  

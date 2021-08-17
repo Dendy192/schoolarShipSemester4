@@ -1,12 +1,8 @@
 function cekForm(){
     var uName = document.getElementById('uName').value;
     var psw = document.getElementById('pass').value;
-   var user = localStorage.getItemetItem("user",uName);
-   
-    var pss = localStorage.getItemetItem("pass",psw);
-    
-    
-
+//     let accounValid = JSON.parse(localStorage.getItem('userAccount'));
+//    console.log(accounValid);
     
     
     if(uName == ''){
@@ -19,11 +15,15 @@ function cekForm(){
         document.getElementById('lerror').innerHTML ="Cannot contain space character ";
          return false;
     }
-
-    else if(uName != user && psw != pss){
-        document.getElementById('lerror').innerHTML ="username/passwoord infalid ";
-         return false;
+    else if(psw == ''){
+        document.getElementById('lerror').innerHTML ="Password Must be filled";
+        return false;
     }
+
+    // else if(accounValid.findIndex(uName)){
+    //     document.getElementById('lerror').innerHTML ="username/passwoord infalid ";
+    //      return false;
+    // }
    
     
 

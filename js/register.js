@@ -7,9 +7,9 @@ function cekForm(){
     var cpsw = document.getElementById('cPass').value;
     var cek = document.getElementById('checkbox').checked;
     
+    let userAccount = new Array();
     
-    
-
+  
     
     var at =  e.indexOf('@');
     var dot = e.lastIndexOf('.');
@@ -32,6 +32,7 @@ function cekForm(){
         document.getElementById('regiserror').innerHTML ="email must be contain @ and .";
         return false;
     }
+    
     else if(uName <7){
         document.getElementById('regiserror').innerHTML ="Length must be greater than 6 characters";
         return false;
@@ -45,7 +46,7 @@ function cekForm(){
         return false;
     }
      else if(alphanum(psw)==true){ 
-        document.getElementById('regiserror').innerHTML ="Must be alphanumeric ";
+        document.getElementById('regiserror').innerHTML ="Password Must be alphanumeric ";
         return false;
     }
      else if(cpsw != psw){
@@ -61,12 +62,21 @@ function cekForm(){
     }
 
     else{
-       alert("register succes");
-        localStorage.setItem("user",uName);
-        localStorage.setItem("pass",psw)
+        let userA = new Array();
+        userA.push({
+                id: Date.now(),
+                userName: uName,
+                password: psw,
+                fullName: name,
+                email: e
+                
+               })
+               let ua = JSON.stringify(userA);
+               localStorage.setItem('userAccount', ua);
+               let get = localStorage.getItem('userAccount');
+            console.log(get);
+        alert("register succes");
         return true;
-
-        
     }
 }   
 function letter(name) {

@@ -21,7 +21,7 @@ function setRating(ev){
         }else{
             star.classList.add('rated');
         }
-        //are we currently looking at the span that was clicked
+        
         if(star === span){
             match = true;
             num = index + 1;

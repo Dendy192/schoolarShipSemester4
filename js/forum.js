@@ -1,21 +1,39 @@
 function onLoad(){
-    var name = new Array();
-    var mel = new Array();
-    var thrd = new Array();
+    // let post = JSON.parse(localStorage.getItem('Forum'));
+    // for(let i = 0;i<post.length;i++){
+    //     var result ="<img class=\"poto\" src=\"img/512px-Circle-icons-profile.svg.png\" alt=image /><br>"+post[i]+"<br>"+post[i]+"<br>"+post[i]+"<br>"+post[i];
+    //     document.getElementById('frm').innerHTML = result;
 
-    name = localStorage.getItem('nama');
-    mel = localStorage.getItem('mail');
-    thrd = localStorage.getItem('tred');
-
-    for(i=0;i<i.length;i++){
-        var result ="<img class=\"poto\" src=\"img/512px-Circle-icons-profile.svg.png\" alt=image /><br>"+name[i]+"<br>"+mel[i]+"<br>"+thrd[i]+"";
-        document.getElementById('frm').innerHTML = result;
-
+    // }
+    // const string = localStorage.getItem('Forum');
+    // const array = JSON.parse(string);
+    
+    // const ul = document.createElement('ul');
+    // let data = '';
+    // for(let i = 0; i < array.length; i++){
+    //   const li = document.createElement('li');
+    //   const text = document.createTextNode(array[i]);
+    //   li.appendChild(text);
+    //   ul.appendChild(li);
+    // }
+    // // assuming you have id of 'root' where you want to display these items
+    // document.getElementById('frm').appendChild(ul);
+    // console.log("retrieve records");
+     
+    // var records = Json.parse(localStorage.getItem('Forum'));
+    // var paragraph = document.createElement("p");
+    // var infor = document.createTextNode(records);
+    // paragraph.appendChild(infor);
+    // var element = document.getElementById('frm');
+    // element.appendChild(paragraph);
+    const fr = document.getElementById('frm');
+    const p = JSON.parse(localStorage.getItem('Form'));
+    for(let i =0; i < p.length; i++){
+        
+        const data = p[i];
+      
+        fr.innerHTML = data;
     }
-    for (i = 0; i < localStorage.length; i++) {
-        x = localStorage.key(i);
-        document.getElementById("frm").innerHTML += x;
-      }
 }
 function myFunciton(){
 
@@ -41,15 +59,21 @@ function myFunciton(){
         return false;
     }
     else{
+        var forum = new Array();
+        forum.push({
+            id: Date.now(),
+            username: user,
+            email: e,
+            thread: thread
+        });
+      
+        localStorage.setItem('Forum', JSON.stringify(forum));
         alert("Data Saved");
-       localStorage.setItem('nama', user);
-       localStorage.setItem('mail', email);
-       localStorage.setItem('tred', thread);
-       for (i = 0; i < localStorage.length; i++) {
-        x = localStorage.key(i);
-        document.getElementById("frm").innerHTML += x;
-      }
-        return true;
+        var get = json.parse(localStorage.getItem('Forum'));
+        console.log(get);
+        localStorage.reload();
+        
+        
        
         
     }
